@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d51a217799.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/simple-lightbox.css?v2.8.0" />
+    <title>Mexican Fitness</title>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active"> <span>Mexican</span> Fitness</a>
+            <a onclick="myFunction()" href="#inicio">Inicio</a>
+            <a onclick="myFunction()" href="#nosotros">Nosotros</a>
+            <a onclick="myFunction()" href="#galeria">Galería</a>
+            <a onclick="myFunction()" href="#planes">Planes</a>
+            <a onclick="myFunction()" href="#contacto">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+    </header>
+
+
+    <div class="video-fondo" id="inicio">
+        <video autoplay loop muted class="video">
+            <source src="/img/video.mp4">
+        </video>
+        <div class="contenido">
+            <h2>Mexican Fitness</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+
+
+    <div class="main contenedor">
+        <div class="texto">
+            <p class="inicio-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, magnam consequuntur.
+                Maxime cupiditate tempore nulla ullam perferendis nam minus dignissimos consectetur! Iure libero
+                explicabo voluptatibus nesciunt sint sunt nobis voluptate autem sit! Neque nihil, ipsa ullam voluptas
+                ipsum quidem expedita?
+            </p>
+            <a href="#" class="boton-contactanos">Lorem, ipsum.</a>
+        </div>
+        <img src="/img/1.jpg" alt="fitness">
+    </div>
+
+    <div class="lineas contenedor">
+        <p class="texto-lineas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sint ut. Corrupti
+            illum voluptatum aut maxime corporis perferendis fuga nesciunt.</p>
+        <p class="texto-lineas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam ratione eos
+            beatae, doloribus tenetur adipisci illum a quo laboriosam.</p>
+        <p class="texto-lineas">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam aperiam ut sapiente
+            nobis quisquam recusandae nam hic! Minus, excepturi alias!</p>
+    </div>
+
+
+    <div class="informacion contenedor" id="nosotros">
+        <div class="imagen">
+            <img src="/img/2.jpg" alt="" width="300px">
+        </div>
+        <div class="texto">
+            <h3 class="titulo-informacion">Lorem, <span>ipsum</span> dolor.</h3>
+            <p class="texto-informacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus at dolor
+                velit voluptate eaque, ut tempore libero. Vitae porro rem, corrupti et, repudiandae sapiente ratione,
+                repellat quos inventore deleniti esse!</p>
+            <p class="texto-informacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio delectus
+                nesciunt beatae dicta est ut, repellendus, voluptatum assumenda quia porro nobis? Minus illum
+                accusantium veritatis odit fuga debitis ipsam iusto!</p>
+        </div>
+    </div>
+
+
+    <div class="galeria contenedor" id="galeria">
+        <h2>Galería <span>Mexican</span> Fitness</h2>
+        <div class="imagenes">
+            <a href="img/3.jpg" class="big" rel="rel1">
+                <img src="img/3.jpg" width="300" alt="">
+            </a>
+            <a href="img/4.jpg" class="big" rel="rel1">
+                <img src="img/4.jpg" width="300" alt="">
+            </a>
+            <a href="img/5.jpg" class="big" rel="rel1">
+                <img src="img/5.jpg" width="300" alt="">
+            </a>
+            <a href="img/6.jpg" class="big" rel="rel1">
+                <img src="img/6.jpg" width="300" alt="">
+            </a>
+            <a href="img/3.jpg" class="big" rel="rel1">
+                <img src="img/3.jpg" width="300" alt="">
+            </a>
+            <a href="img/8.jpg" class="big" rel="rel1">
+                <img src="img/8.jpg" width="300" alt="">
+            </a>
+            <a href="img/4.jpg" class="big" rel="rel1">
+                <img src="img/4.jpg" width="300" alt="">
+            </a>
+            <a href="img/6.jpg" class="big" rel="rel1">
+                <img src="img/6.jpg" width="300" alt="">
+            </a>
+            <a href="img/4.jpg" class="big" rel="rel1">
+                <img src="img/4.jpg" width="300" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="precios-fitness contenedor" id="planes">
+        <h2>Planes <span>Fitness</span></h2>
+        <div class="planes contenedor">
+            <div class="planes-contenedor">
+                <div class="tarjeta">
+                    <div class="ImgTarjeta" data-text="Individual">
+                        <img src="img/solo.png" alt="">
+                    </div>
+                    <div class="contenido">
+                        <div>
+                            <h3>Plan Individual</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, esse!</p>
+                            <a href="#">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="ImgTarjeta" data-text="Familiar">
+                        <img src="img/familia.png" alt="">
+                    </div>
+                    <div class="contenido">
+                        <div>
+                            <h3>Plan Familiar</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, esse!</p>
+                            <a href="#">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacto contenedor" id="contacto">
+        <h2>Contactanos</h2>
+        <div class="contacto-formulario">
+            <div class="google-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.661335900788!2d-98.21290263548988!3d19.034639263831053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0c5c2acb04b%3A0xf4fe5f020f715c6b!2sInsurgentes%20Centro%2C%20Puebla%2C%20Pue.!5e0!3m2!1ses!2smx!4v1637977943143!5m2!1ses!2smx"
+                    height="460" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="formulario">
+                <form action="">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <textarea placeholder="Mensaje" name="" id="" cols="30" rows="10"></textarea>
+                    <input class="boton" type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="pie">
+        <a href="#twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#github"><i class="fab fa-github"></i></a>
+        <p>With Love From <span>Edahi</span> Garrido Sedeño</p>
+    </footer>
+
+
+    <script src="/dist/simple-lightbox.js?v2.8.0"></script>
+    <script>
+        (function () {
+            var $gallery = new SimpleLightbox('.imagenes a', {});
+        })();
+    </script>
+</body>
+
+</html>

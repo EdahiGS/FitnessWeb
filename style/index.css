@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+  background: #0d0d0dff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedor {
+  margin: auto;
+  max-width: 1000px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CB1C1C;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+header {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 0.5px 3px #000;
+  background-color: black;
+}
+header .topnav {
+  overflow: hidden;
+  text-align: center;
+}
+header .topnav a {
+  font-weight: 600;
+  display: inline-block;
+  color: #FCD8D8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+header .topnav a:hover {
+  text-decoration: underline;
+}
+header .topnav a.active {
+  color: #FCD8D8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  float: left;
+}
+header .topnav a.active span {
+  color: #CB1C1C;
+}
+header .topnav .icon {
+  display: none;
+}
+
+.video-fondo {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-fondo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.video-fondo .contenido {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-fondo .contenido h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.video-fondo .contenido p {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.main {
+  margin-top: 150px;
+  margin-bottom: 200px;
+  display: flex;
+}
+.main .texto {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .texto .inicio-texto {
+  width: 80%;
+  color: #FCD8D8;
+  text-align: center;
+}
+.main .texto .boton-contactanos {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  background-color: #CB1C1C;
+}
+.main .texto .boton-contactanos:hover {
+  border-radius: 0 30px 0 30px;
+}
+.main img {
+  max-width: 400px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.lineas {
+  display: flex;
+  text-align: center;
+  color: #FCD8D8;
+  margin-bottom: 200px;
+}
+.lineas .texto-lineas {
+  padding: 0 25px;
+}
+
+.informacion {
+  display: flex;
+  flex-wrap: wrap;
+}
+.informacion .imagen {
+  width: 30%;
+}
+.informacion .imagen img {
+  border-radius: 5px;
+}
+.informacion .texto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  padding-left: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.informacion .texto .titulo-informacion {
+  color: #FCD8D8;
+}
+.informacion .texto .titulo-informacion span {
+  color: #CB1C1C;
+}
+.informacion .texto .texto-informacion {
+  color: #FCD8D8;
+}
+
+.galeria {
+  margin-top: 150px;
+}
+.galeria h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #FCD8D8;
+}
+.galeria h2 span {
+  color: #CB1C1C;
+}
+.galeria .imagenes {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.galeria .imagenes img {
+  border-radius: 5px;
+}
+
+.precios-fitness {
+  text-align: center;
+  margin-top: 150px;
+}
+.precios-fitness h2 {
+  color: #FCD8D8;
+}
+.precios-fitness h2 span {
+  color: #CB1C1C;
+}
+
+.planes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d0dff;
+}
+.planes .planes-contenedor {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+.planes .planes-contenedor .tarjeta {
+  position: relative;
+  height: 250px;
+  background: #FFF;
+  width: 45%;
+  margin: 30px 0;
+}
+.planes .planes-contenedor .tarjeta .contenido {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planes .planes-contenedor .tarjeta .contenido h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.planes .planes-contenedor .tarjeta .contenido a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #CB1C1C;
+  color: #FCD8D8;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.planes .planes-contenedor .tarjeta .ImgTarjeta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.planes .planes-contenedor .tarjeta .ImgTarjeta:before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+}
+.planes .planes-contenedor .tarjeta:hover .ImgTarjeta {
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  top: calc(50% - 75px);
+  transition: 0.5s ease-in-out;
+  background: #FCD8D8;
+}
+.planes .planes-contenedor .tarjeta .ImgTarjeta img {
+  max-width: 100px;
+  transition: 0.5s ease-in-out;
+}
+.planes .planes-contenedor .tarjeta:hover .ImgTarjeta img {
+  max-width: 75px;
+}
+
+.contacto {
+  text-align: center;
+  color: #FCD8D8;
+  margin-top: 150px;
+}
+.contacto h2 {
+  margin-bottom: 50px;
+}
+.contacto .contacto-formulario {
+  display: flex;
+}
+.contacto .contacto-formulario .google-maps {
+  width: 50%;
+  margin-top: 15px;
+}
+.contacto .contacto-formulario .google-maps iframe {
+  width: 500px;
+  max-width: 500px;
+}
+.contacto .contacto-formulario .formulario {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacto .contacto-formulario .formulario form {
+  margin-left: 20px;
+}
+.contacto .contacto-formulario .formulario form input {
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px 0;
+  padding-left: 10px;
+  background: #333;
+  color: #FCD8D8;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+.contacto .contacto-formulario .formulario form input:focus {
+  outline: none;
+}
+.contacto .contacto-formulario .formulario form .boton {
+  background: #CB1C1C;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.contacto .contacto-formulario .formulario form .boton:hover {
+  border-radius: 0 30px 0 30px;
+}
+.contacto .contacto-formulario .formulario form textarea {
+  width: 100%;
+  background: #333;
+  color: #FCD8D8;
+  border: none;
+  margin: 10px 0;
+  border-radius: 5px;
+  resize: none;
+  padding: 10px;
+  font-size: 1.1em;
+}
+.contacto .contacto-formulario .formulario form textarea:focus {
+  outline: none;
+}
+
+.pie {
+  margin-top: 200px;
+  width: 100%;
+  background-color: black;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie i {
+  margin: 0px 50px;
+  padding: 20px;
+  background: #CB1C1C;
+  color: #333;
+  font-size: 35px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.pie i:hover {
+  border-radius: 0 30px 0 30px;
+}
+.pie p {
+  color: #FCD8D8;
+}
+.pie p span {
+  color: #CB1C1C;
+}
+
+@media screen and (max-width: 1150px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .topnav.responsive a.active {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .planes-contenedor {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .planes-contenedor .tarjeta {
+    width: 400px;
+  }
+
+  .galeria .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .galeria .imagenes img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .planes .planes-contenedor .tarjeta {
+    max-width: 300px;
+    flex-direction: column;
+    height: auto;
+  }
+  .planes .planes-contenedor .tarjeta .ImgTarjeta {
+    position: relative;
+  }
+  .planes .planes-contenedor .tarjeta .contenido {
+    position: relative;
+    width: 100%;
+  }
+  .planes .planes-contenedor .tarjeta .ImgTarjeta,
+.planes .planes-contenedor .tarjeta:hover .ImgTarjeta {
+    width: 100%;
+    height: 200px;
+    left: 0;
+  }
+  .planes .planes-contenedor .tarjeta .ImgTarjeta img,
+.planes .planes-contenedor .tarjeta:hover .ImgTarjeta img {
+    max-width: 100px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .video-fondo {
+    width: 100%;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .texto {
+    margin-bottom: 60px;
+  }
+  .main .texto .inicio-texto {
+    margin-bottom: 30px;
+  }
+  .main img {
+    width: 100%;
+  }
+
+  .lineas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lineas .texto-lineas {
+    margin-bottom: 20px;
+    width: 50%;
+  }
+
+  .informacion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .informacion .imagen {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .informacion .texto h3 {
+    margin-bottom: 20px;
+  }
+
+  .galeria .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .galeria .imagenes img {
+    width: 100%;
+  }
+
+  .contacto .contacto-formulario {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto .contacto-formulario .google-maps {
+    width: 100%;
+  }
+  .contacto .contacto-formulario .google-maps iframe {
+    width: 100%;
+  }
+  .contacto .contacto-formulario .formulario {
+    width: 80%;
+  }
+
+  .pie {
+    flex-direction: column;
+    height: auto;
+  }
+  .pie a {
+    margin: 20px 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
